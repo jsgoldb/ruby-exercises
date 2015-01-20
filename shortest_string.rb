@@ -14,9 +14,8 @@ def shortest_string(list)
 end
 
 if __FILE__ == $0
-  p shortest_string["Here's", "another", "one", "of those", "test",
-    "things"] == "of those"
-  p shortest_string["that", "seem", "to be so", "important"] == "important"
-  p shortest_string["but what about", "this kind of  ", "case"]
-    == "but what about"
+  p shortest_string(["Here's", "another", "one", "of those", "test",
+    "things"]) == "one"
+  p shortest_string(["that", "seem", "to be so", "important"]) == "that"
+  p shortest_string(["but what about", "this one??????"]) == "but what about"
 end
