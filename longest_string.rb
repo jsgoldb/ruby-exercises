@@ -15,7 +15,7 @@ def longest_string(list)
   longest_so_far = list[0]    #assign longest to first string in list
   list.each do |item|
     if item.length > longest_so_far.length   #check each string length to find
-      longest_so_far = item                  #  the longest
+      longest_so_far = item                  #  the longest string
     end
   end
 
